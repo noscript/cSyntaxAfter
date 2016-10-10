@@ -1,7 +1,7 @@
 " File: cSyntaxAfter.vim
 " Author: Sergey Vlasov <sergey@vlasov.me>
-" Last Change: 2015-03-10
-" Version: 0.3
+" Last Change: 2016-10-10
+" Version: 0.4
 ""
 " This plugin was initially created for codeblock_dark color theme to
 " highlight operators (+ - / * = <> () and others) in C-like languages.
@@ -44,8 +44,8 @@ function! CSyntaxAfter()
 	syntax match _Block "[{}]"
 	syntax match _Bracket "[\[\]]"
 	syntax match _Operator "[-+&|<>=!\/~.,;:*%&^?()]"
-	syntax region _Comment start="\/\*" end="\*\/"
-	syntax match _Comment "\/\/.*$"
+	syntax region _Comment start="\/\*" end="\*\/" contains=@Spell
+	syntax match _Comment "\/\/.*$" contains=@Spell
 
 	hi _Block guifg=yellow1 guibg=NONE gui=none
 	hi link _Bracket Constant
