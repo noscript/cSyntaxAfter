@@ -2,7 +2,7 @@ This plugin was initially created for [codeblock_dark color theme](https://githu
 to highlight operators (`+`, `-`, `/`, `*`, `=`, `<`, `>`, `(`, `)` and others) in C-like languages.
 Why it's needed? Well, by default vim doesn't do that. After switching from Code::Block to vim I got really missed it.
 
-Then the plugin grew into something bigger. I started to use it to unify overal syntax highlighting for C-like languages.
+Then the plugin grew into something bigger. I started to use it to unify overall syntax highlighting for C-like languages.
 
 # Screenshots
 
